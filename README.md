@@ -7,7 +7,7 @@ Run "npm install" to install all dependencies required for client and backend
 ##### Dev Mode
 Run "npm run dev" to start the vite-react as well as express server concurrently.
 Open http://localhost:5173
-Check the vite-config for proxy configuration. 
+Check the vite-config for proxy configuration. to connect client to backend.
 
 ##### Build
 Run "npm run build" to create the production build.
