@@ -1,0 +1,29 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev-ui": "npm run dev --prefix client",
+    "dev-backend": "npm run dev --prefix backend",
+    "build-ui": "npm run build --prefix client",
+    "build-backend": "npm run build --prefix backend",
+    "dev":"concurrently npm:dev-*",
+    "build": "concurrently npm:build-*",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": {
+    "packages": [
+      "client",
+      "backend",
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
